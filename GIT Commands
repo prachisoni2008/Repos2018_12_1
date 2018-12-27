@@ -1,0 +1,107 @@
+
+q for quit
+cd /d C:\
+git init
+echo "Apple Pie" | git hash-object --stdin
+
+git config --list list sall the possoble usernames and accounts linked
+settings
+
+git --version
+git config user.name
+
+git help config
+
+git --help
+
+git --help -a
+
+---------------------------------
+	make sure to be in the folder which u want to connect
+
+echo "# wired-brain" >> README.md
+	(untracked file locally)
+
+		add files to staging area 
+git init 
+
+	this should add the .git folder inside 
+	the current folder to keep tracking
+git add .
+	( add all files to staging)
+
+git commit -m "first commit"
+
+	(now commited locally)
+ 	connect to repositories
+
+git remote add originX "https...."
+
+
+	now push to GITHUb repo
+
+git push -u originx master
+
+	now we have 2 of the repositories connected.
+
+	add a new file 
+
+notepad vendors.txt
+
+	add untracked file 
+git status 
+git add vendors.txt
+----
+git status -s
+git status --short
+
+
+git diff --staged
+
+git log 
+git log --1 (number of commits one needs to see)
+git log --oneline
+  history of commits in desc order
+
+git log --patch
+
+
+general rules for writing commit message
+
+https://chris.beams.io/posts/git-commit/
+
+remove a file from git project
+
+stop tracking the file first
+git rm filename
+in dir wont see it
+( now file has been deleted locally) once commited it will be gone from project
+
+
+keep the file but not track 
+git rm --cached filename
+on dir it will be there
+
+to rename a file 
+git mv README.md README
+
+old  name new name 
+
+http://git-school.github.io/visualizing-git
+
+Branch - a lightweight moveable pointer to a commit made in a project.
+what branch to made the commit on.
+ git checkout -b new_branch
+	to checkout to a new branch
+ git add .
+git stash 
+( to record the current stage)
+git statsh list
+git stash show
+
+
+---when 2 people try to push changes to the same file 
+err- error failed to push some ref to master
+
+
+----automatic merge failed fix conflict GIT
